@@ -227,11 +227,11 @@ img {
 
 @media (max-width: 768px) {
     .section {
-      flex-direction: column; /* Stack sections vertically on small screens */
-      gap: 1rem; /* Adjust the space between sections */
+      flex-direction: column; 
+      gap: 1rem; 
     }
   
     .container {
-      gap: 1rem; /* Adjust the space between sections */
+      gap: 1rem; 
     }
   }
