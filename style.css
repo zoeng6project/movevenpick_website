@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AT:ital,wght@0,233;1,233&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+AT:ital,wght@0,233;1,233&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Rubik+Moonrocks&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+
+main {
+  padding: 5rem 1rem;
+  flex: 1; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    /* height: 100vh; */
+    
+  }
+
+  .section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex: 1;
+  }
+
+  .left-container,
+  .right-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+
+  .left-container img,
+  .right-container img {
+    width: 80%;
+    height: auto;
+    max-width: 80%;
+    transition: transform 0.3s ease-in-out; 
+    object-fit: cover; 
+  }
+
+  .left-container img:hover,
+.right-container img:hover {
+  transform: scale(1.1); 
+}
+
+.left-container {
+    background-color: #FFFFCC;
+    
+    
+  }
+
+  .right-container {
+    background-color: #FFE5B4;
+    background-image: url('img/nestle_logo.png');
+  }
+
+
+h1, h2 {
+  margin-top: 0;
+  font-family: 'Rock Salt';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  color: #3B478C
+  
+}
+
+p {
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0; 
+}
+
+.logo img {
+  max-width: 115px;
+}
+
+.footer-container {
+  background-color: #444;
+  padding: 1.5rem;
+  border-radius: 4px;
+  flex-basis: 48%;
+}
+
+.footer-container h3 {
+  margin-bottom: 1rem;
+}
+
+.company-info {
+  text-align: left;
+}
+
+.contact-form {
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+nav {
+    font-family: 'Playwrite AT', cursive;
+    background-color: #26321f;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-right: 1rem;
+  }
+  
+  .logo-image {
+    fill: white; 
+    width: 30px; 
+    height: auto; 
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-grow: 1;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    color: #d7c695;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: #444;
+    color: #d8a731;
+  }
+  
+  nav li::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+  }
+  
+  nav li:hover::after {
+    width: 100%;
+  }
+
+/* section {
+  margin-bottom: 3rem;
+} */
+
+h1, h2, h3 {
+  margin-bottom: 2rem;
+}
+
+/* p {
+  margin-bottom: 1.5rem;
+} */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .section {
+      flex-direction: column; /* Stack sections vertically on small screens */
+      gap: 1rem; /* Adjust the space between sections */
+    }
+  
+    .container {
+      gap: 1rem; /* Adjust the space between sections */
+    }
+  }
